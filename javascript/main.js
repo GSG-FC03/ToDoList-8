@@ -4,9 +4,11 @@ let divList=document.getElementById('todoList');
 let section,para,edit,del;
 btnAdd.onclick= addList;
 
+let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+localStorage.setItem('items', JSON.stringify(itemsArray));
+
 function addList(event){
     event.preventDefault();
-    let id=Math.floor(Math.random()*50);
 
     section=document.createElement('section');
     section.setAttribute('class','list');
@@ -27,6 +29,10 @@ function addList(event){
     section.appendChild(edit)
     section.appendChild(del)
     divList.appendChild(section); 
-    document.getElementById("inputTask").value = '';   
+
+    itemsArray.push(text.value);
+    localStorage.setItem('items', JSON.stringify(itemsArray));
+    document.querySelector("#inputTask").value = "" 
+     
 
 }
