@@ -27,6 +27,8 @@ form{
 }
 #btnAdd:hover{
     cursor: pointer;
+    color:#d5dce8;
+    box-shadow: none;
 }
 .list{
     display: flex;
