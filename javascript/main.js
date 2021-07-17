@@ -26,6 +26,9 @@ function addList(event){
         para.setAttribute('calss',"paraText")
         para.style.width='50%'
  
+    del = document.createElement('i');
+    del.setAttribute('class', 'del far far fa-trash-alt');
+    del.setAttribute('onclick', 'del2(event)');
 
         complete=document.createElement('i');
         complete.setAttribute('class','fas fa-check');
@@ -34,8 +37,7 @@ function addList(event){
         edit = document.createElement('i');
         edit.setAttribute('class','editIcon far fa-edit');
     
-        del = document.createElement('i');
-        del.setAttribute('class', 'delIcon far far fa-trash-alt');
+       
         
         section.appendChild(para)
         section.appendChild(complete)
@@ -62,4 +64,12 @@ function completeTask(event){
 }
 
 
-   
+  
+
+//delete function
+function del2(event){
+    let value = event.target.parentNode.textContent
+    itemsArray.splice(itemsArray.indexOf(value), 1); 
+    localStorage.setItem('items',JSON.stringify(itemsArray))
+    event.target.parentNode.remove()
+}
