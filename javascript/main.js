@@ -3,6 +3,7 @@ let text = document.getElementById('inputTask');
 let btnAdd= document.getElementById('btnAdd');
 let divList=document.getElementById('todoList');
 let section,para,edit,del;
+let complete;
 btnAdd.onclick= addList;
 
 // declare array to store the input value on it
@@ -24,7 +25,11 @@ function addList(event){
         para.textContent= text.value;
         para.setAttribute('calss',"paraText")
         para.style.width='50%'
-    
+ 
+
+        complete=document.createElement('i');
+        complete.setAttribute('class','fas fa-check');
+        complete.setAttribute('onclick','completeTask(event)');        
 
         edit = document.createElement('i');
         edit.setAttribute('class','editIcon far fa-edit');
@@ -33,6 +38,7 @@ function addList(event){
         del.setAttribute('class', 'delIcon far far fa-trash-alt');
         
         section.appendChild(para)
+        section.appendChild(complete)
         section.appendChild(edit)
         section.appendChild(del)
         divList.appendChild(section); 
