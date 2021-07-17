@@ -5,10 +5,10 @@
 - One of the most important reasons you should use a todo list is that it will   help you stay organised. When you write all your tasks in a list, they seem more manageable. When you’ve got a clear outline of the tasks you’ve got to do and those you’ve completed, it helps you stay focused. While freeing up space in your mind for other more creative tasks.
 
 # user stories:
-* Able to add his task.
-* Able to edit the task of his choice.
-* Able to delete the task of his choice.
-* If close the browser and open it again,the tasks he entered remains display on the page.
+* As a user, I can add my task.
+* As a user, I can edit the task of my choice.
+* As a user, I can delete the task of my choice.
+* As a user, If close the browser and open it again,the tasks entered remains display on the page.
 
 # Live Link
 
