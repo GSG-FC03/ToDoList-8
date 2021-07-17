@@ -12,6 +12,9 @@ localStorage.setItem('items', JSON.stringify(itemsArray));
 
 //define add function to add input value on local storage and appear on page
 function addList(event){
+    if(text.value == ''){
+        alert('Plaese Enter your task');
+    }else{
         event.preventDefault();
 
         section=document.createElement('section');
@@ -37,6 +40,7 @@ function addList(event){
         itemsArray.push(text.value);
         localStorage.setItem('items', JSON.stringify(itemsArray));
         document.querySelector("#inputTask").value = "" 
+    }    
                  
 }
 
