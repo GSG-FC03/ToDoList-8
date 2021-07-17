@@ -50,5 +50,16 @@ function addList(event){
                  
 }
 
+//we need this function when the user complete his task
+function completeTask(event){
+    let comp=event.target.parentNode.textContent;
+    itemsArray.splice(itemsArray.indexOf(comp), 1); 
+    localStorage.setItem('items',JSON.stringify(itemsArray))
+    event.target.parentNode.firstChild.style.textDecoration='line-through';
+    event.target.parentNode.firstChild.style.fontSize='20px';
+    event.target.parentNode.style.backgroundColor = 'rgb(55 55 59)'  
+    event.target.parentNode.style.color ='#8bc34a'   
+}
+
 
    
