@@ -20,10 +20,12 @@ function addList(event){
     edit = document.createElement('i');
     edit.setAttribute('class','editIcon far fa-edit');
 
-    edit.setAttribute("onclick","edit2(event)")
+    edit.setAttribute("onclick","edit2")
     
     del = document.createElement('i');
     del.setAttribute('class', 'delIcon far far fa-trash-alt');
+   
+
 
 
     
@@ -59,3 +61,4 @@ function submit (event){
     document.querySelector("#inputTask").value = "" 
     event.target.remove()
 }
+
