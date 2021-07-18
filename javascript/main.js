@@ -4,6 +4,29 @@ let btnAdd= document.getElementById('btnAdd');
 let divList=document.getElementById('todoList');
 let section,para,edit,del;
 let complete;
+
+// dark and light for page 2
+let header=document.querySelector('h3')
+let body2=document.querySelector('body')
+let dark=document.querySelector('.dark');
+let light = document.querySelector('.light')
+
+dark.onclick= function(){
+    body2.classList.add('darkMode');
+    header.classList.add('header');
+    dark.style.color='#fff';
+    light.style.color='#fff'
+}
+
+light.onclick=function(){
+    body2.classList.remove('darkMode');
+    header.classList.remove('header');
+    dark.style.color='#000';
+    light.style.color='#000'    
+
+}
+
+
 btnAdd.onclick= addList;
 
 // declare array to store the input value on it
