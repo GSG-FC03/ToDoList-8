@@ -36,3 +36,12 @@ button:hover{
     cursor: pointer;
 }
 
+/* body darkmode*/
+.darkMode{
+    background-color:#2f2d2d
+}
+/*h3 dark mode*/
+.header{
+    color:#e4c0c0
+}
+
