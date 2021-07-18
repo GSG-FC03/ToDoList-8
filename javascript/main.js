@@ -95,3 +95,36 @@ function del2(event){
     localStorage.setItem('items',JSON.stringify(itemsArray))
     event.target.parentNode.remove()
 }
+
+// when reload page
+window.onload = function(e){
+    if(localStorage!=null){
+        for(let i=0; i<itemsArray.length;++i){
+            section=document.createElement('section');
+            section.setAttribute('class','list');
+            para=document.createElement('p');
+            para.textContent= itemsArray[i]
+            para.classList.add("paraText")
+ 
+            complete=document.createElement('i');
+            complete.setAttribute('class','fas fa-check');
+            complete.setAttribute('onclick','completeTask(event)');
+
+            edit = document.createElement('i');
+            edit.classList.add('editIcon','far','fa-edit');
+        
+            edit.setAttribute("onclick","edit2(event)")
+        
+            del = document.createElement('i');
+            del.classList.add('delIcon','far','far','fa-trash-alt');
+            del.setAttribute('onclick', 'del2(event)');
+        
+            
+            section.appendChild(para)
+            section.appendChild(complete)
+            section.appendChild(edit)
+            section.appendChild(del)
+            divList.appendChild(section);            
+        }
+    }
+}
