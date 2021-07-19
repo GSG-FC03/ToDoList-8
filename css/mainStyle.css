@@ -101,7 +101,8 @@
       background: #d5dce8;
       margin: 8px;
       padding: 5px;
-      border-radius: 10px;    
+      border-radius: 10px; 
+      width:90%   
 }
     .paraText{
       width:40%;
