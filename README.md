@@ -12,6 +12,16 @@
 
 # Live Link
 
+
+# How do I get the project on my local machine?
+* As a user:
+1- I can clone code from github by copy the link.
+2- Open git bash.
+3- write git clone and paste the link.
+4- to open the code, write (**code .**).
+5- to show the pages, open **Go live** Or right click mouse and select **"open with live server"**.
+
+
 # Our Team:
  * [Eman Hassouna](https://github.com/EmanHass)
  * [monther ismail](https://github.com/MontherIsmail)
