@@ -46,6 +46,7 @@
         padding: 10px;
         border-radius: 10px;
         font-size: 25px;    
+        width: 50%;
     }
     .paraText{
         width:50%;
@@ -55,6 +56,11 @@
     .delIcon:hover{
         cursor: pointer;
         color:#3f5058cc;
+    }
+    #todoList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -106,4 +112,44 @@
       cursor: pointer;
       color:#3f5058cc;
 }
+#btnAdd{
+    font-size: 25px;
+    padding: 9px;
+    background: #3f5058cc;
+    box-shadow: 7px 8px 10px #564d4d;
+}
+#btnAdd:hover{
+    cursor: pointer;
+    color:#d5dce8;
+    box-shadow: none;
+}
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background: #d5dce8;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;    
+}
+.paraText{
+    width:50%;
+    font-size: 20px;
+}
+.editIcon:hover,
+.delIcon:hover{
+    cursor: pointer;
+    color:#3f5058cc;
+}
+}
+/* body darkmode*/
+.darkMode{
+    background-color:#454242
+}
+/*h3 dark mode*/
+.header{
+    color:#e4c0c0
+}
+.dark,.light{
+    font-size: 25px;
 }

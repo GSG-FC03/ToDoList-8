@@ -7,10 +7,14 @@ body{
     background-color: #d89d9d;
 
 }
+header{
+    margin: 30px 18px;
+    font-size: 22px;    
+}
 section{
     text-align: center;
     position: absolute;
-    top:16%
+    top:20%
 }
 .icons{
     margin: 35px 0 20px 0;  
@@ -30,5 +34,14 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+
+/* body darkmode*/
+.darkMode{
+    background-color:#454242
+}
+/*h3 dark mode*/
+.header{
+    color:#e4c0c0
 }
 
