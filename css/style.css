@@ -13,7 +13,6 @@ header{
 }
 section{
     text-align: center;
-    position: absolute;
     top:20%
 }
 .icons{
@@ -28,7 +27,7 @@ h2{
 button{
     font-size: 20px;
     padding: 10px;
-    width: 30%;
+    width: 100%;
     background: #a79e9e;
     box-shadow: 6px 4px 2px #0b0e0366; 
 }
@@ -45,3 +44,11 @@ button:hover{
     color:#e4c0c0
 }
 
+@media(max-width:1800px){
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
