@@ -3,21 +3,114 @@
     font-family:cursive 
     
 }
-body{
+    body{
     background: #d89d9d; 
+} 
+@media(max-width:1800px){
+
+    header h3{
+        text-align: center;
+        font-size: 70px;
+        padding: 11px;
+        margin-bottom: 10px;  
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+    }
+    #inputTask{
+        font-size: 25px;
+        font-family:cursive;
+        border:40px;
+        padding: 28px;
+        margin: 28px;
+    }
+    #btnAdd{
+        font-size: 45px;
+        padding: 9px;
+        background: #3f5058cc;
+        box-shadow: 7px 8px 10px #564d4d;
+    }
+    #btnAdd:hover{
+        cursor: pointer;
+        color:#d5dce8;
+        box-shadow: none;
+    }
+    .list{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        background: #d5dce8;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 25px;    
+        width: 50%;
+    }
+    .paraText{
+        width:50%;
+        font-size: 25px;
+    }
+    .editIcon:hover,
+    .delIcon:hover{
+        cursor: pointer;
+        color:#3f5058cc;
+    }
+    #todoList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
-header h3{
-    text-align: center;
-    font-size: 50px;
-    padding: 15px;
-    margin-bottom: 20px;  
+
+@media(max-width:700px){
+    header h3{
+      text-align: center;
+      font-size: 50px;
+      padding: 15px;
+      margin-bottom: 20px;  
 }
-form{
-    display: flex;
+    form{
+      display: flex;
 }
-#inputTask{
-    font-size: 17px;
-    font-family:cursive 
+    #inputTask{
+      font-size: 17px;
+      font-family:cursive;
+      border:5px;
+      margin:5px; 
+      padding: 10px;
+}
+    #btnAdd{
+      font-size: 20px;
+      padding: 9px;
+      border: 5px;
+      margin:5px;
+      background: #3f5058cc;
+      box-shadow: 7px 8px 10px #564d4d;
+}
+    #btnAdd:hover{
+      cursor: pointer;
+      color:#d5dce8;
+      box-shadow: none;
+}
+    .list{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      background: #d5dce8;
+      margin: 8px;
+      padding: 5px;
+      border-radius: 10px;    
+}
+    .paraText{
+      width:40%;
+      font-size: 20px;
+}
+    .editIcon:hover,
+    .delIcon:hover{
+      cursor: pointer;
+      color:#3f5058cc;
 }
 #btnAdd{
     font-size: 25px;
@@ -47,6 +140,7 @@ form{
 .delIcon:hover{
     cursor: pointer;
     color:#3f5058cc;
+}
 }
 /* body darkmode*/
 .darkMode{
